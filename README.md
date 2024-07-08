@@ -3,7 +3,7 @@
 
 ## Introduction
 **Magshimim 2nd year final project by Uri Tabic and Roy Lamberg Liany**.
-Trivia Game is an online multiplayer trivia game that allows users to play trivia games from different computers. The game includes server and client components, enabling players to connect over a network.
+Trivia Game is an online multiplayer trivia game that allows users to play trivia games from different computers. The game includes server and client components, enabling players to connect over a network.</br>This project has been copied from gitlab, so there is no Branches and commit history.
 
 ## Table of Contents
 - [Installation](#installation)
