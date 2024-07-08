@@ -11,6 +11,7 @@ Trivia Game is an online multiplayer trivia game that allows users to play trivi
 - [Features](#features)
 - [Dependencies](#dependencies)
 - [Configuration](#configuration)
+- [Examples](#Examples)
 - [Troubleshooting](#troubleshooting)
 - [Contributors](#contributors)
 - [License](#license)
@@ -58,6 +59,18 @@ To install the Trivia Game, follow these steps:
 ## Configuration
 
 You can configure the client's IP address and port by editing the configuration files located in the `config.txt` directory of the client. and server
+
+## Examples
+![Login Page](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Login.png)
+![Signup Page](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Sign%20up.png)
+![Menu Page](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Menu.png)
+![Create room Page](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Create%20room.png)
+![Join room Page](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Join%20room.png)
+![Wait Page](https://github.com/UriTabic/Trivia-Game/blob/main/Images/waiting%20room.png)
+![Game1](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Game.png)
+![Game2](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Game2.png)
+![Statistics Page](https://github.com/UriTabic/Trivia-Game/blob/main/Images/Statistics.png)
+
 
 ## Troubleshooting
 
