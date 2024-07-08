@@ -1,0 +1,16 @@
+﻿<Window x:Class="Trivia_client.Pages.MenuPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trivia_client.Pages"
+        mc:Ignorable="d"
+        Title="MenuPage" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <Label Content="Label" Name="headline" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0"/>
+        <Button Click="SignoutClick" Content="Signout" FontWeight="Bold" FontSize="15" Background="LightGreen"  HorizontalAlignment="Center" VerticalAlignment="Top" Height="27" Width="74" Margin="0,70,0,0"/>
+        <Button Click="StatisticsClick" Content="Statistics" FontWeight="Bold" FontSize="20" Background="BurlyWood" HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="148" Margin="0,180,0,0"/>
+        <Button Click="CreateRoomClick" Content="Create room" FontWeight="Bold" FontSize="20" Background="BurlyWood" HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="148" Margin="0,240,0,0"/>
+        <Button Click="JoinRoomClick" Content="Join room" FontWeight="Bold" FontSize="20" Background="BurlyWood" HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="148" Margin="0,300,0,0"/>
+    </Grid>
+</Window>

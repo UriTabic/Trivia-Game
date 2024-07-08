@@ -1,0 +1,22 @@
+﻿<Window x:Class="Trivia_client.Pages.FinalResults"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trivia_client.Pages"
+        mc:Ignorable="d"
+        Title="FinalResults" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="Leaderboard" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Background="LightSalmon" Height="350" Width="700" Margin="0,30,0,0">
+                <TextBlock Text="Leaderboard:" FontWeight="DemiBold" FontSize="30" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="25" Width="500">Username:</TextBlock>
+                    <TextBlock FontSize="25" HorizontalAlignment="Right">Score:</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Button Click="BackToMenu" Content="Close" FontWeight="Bold" FontSize="15" Background="LightGray"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="30" Width="100" Margin="0,0,0,10"/>
+    </Grid>
+</Window>

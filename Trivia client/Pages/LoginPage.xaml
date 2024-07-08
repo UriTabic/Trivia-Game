@@ -1,0 +1,79 @@
+﻿<Window x:Class="Trivia_client.Pages.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trivia_client.Pages"
+        mc:Ignorable="d"
+        Title="LoginPage" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <TextBlock Text="Login Page"
+                Margin="0,50,0,320"
+                HorizontalAlignment="Center"
+                FontSize="30"
+                FontWeight="ExtraBold"
+                IsHitTestVisible="False"/>
+
+        <Button Content="Click here to signup"
+                HorizontalAlignment="Center"
+                Margin="0,330,0,0"
+                VerticalAlignment="Top"
+                FontSize="15"
+                Background="BurlyWood"
+                Click="redirectToSignup">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBox x:Name="Username"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0,0,0,150"
+                Width="120"
+                Background="BurlyWood"
+                GotFocus="TextBox_GotFocus"
+                LostFocus="TextBox_LostFocus"/>
+        <TextBlock x:Name="UsernamePlaceholder"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0,0,0,150"
+                Text="Username"
+                Foreground="DarkSlateGray"
+                Visibility="Visible"
+                IsHitTestVisible="False"/>
+
+        <PasswordBox x:Name="Password"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0,50,0,100"
+                Width="120"
+                Background="BurlyWood"
+                GotFocus="PasswordBox_GotFocus"
+                LostFocus="PasswordBox_LostFocus"/>
+        <TextBlock x:Name="PasswordPlaceholder"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0,50,0,100"
+                Text="Password"
+                Foreground="DarkSlateGray"
+                Visibility="Visible"
+                IsHitTestVisible="False"/>
+
+        <Button Content="Send"
+        HorizontalAlignment="Center"
+        Margin="0,230,0,0"
+        VerticalAlignment="Top"
+        FontSize="20"
+        Background="BurlyWood"
+        Click="LoginClick">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

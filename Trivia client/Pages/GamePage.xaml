@@ -1,0 +1,49 @@
+﻿<Window x:Class="Trivia_client.Pages.GamePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trivia_client.Pages"
+        mc:Ignorable="d"
+        Title="GamePage" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <TextBlock x:Name="RoomName"
+            HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Room Name: " VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+
+        <TextBlock x:Name="Username"
+            HorizontalAlignment="Center" Margin="0,30,0,0" TextWrapping="Wrap" Text="Username: " VerticalAlignment="Top" FontSize="15"/>
+
+
+        <TextBlock x:Name="MyTimer"
+            HorizontalAlignment="Center" Margin="0,0,0,20" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" FontSize="15"/>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="Leaderboard" Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top" Background="LightSalmon" Height="200" Width="150" Margin="0,102,10,0">
+                <TextBlock Text="Leaderboard:" FontWeight="DemiBold" FontSize="18" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="110">Username: </TextBlock>
+                    <TextBlock HorizontalAlignment="Right">Score:</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <StackPanel x:Name="Answers" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Background="LightSalmon" Height="230" Width="400">
+            <TextBlock TextWrapping="Wrap"  Height="30" Text="Question: " HorizontalAlignment="Center" x:Name="Question"></TextBlock>
+            <StackPanel x:Name="AnswersTop" Orientation="Horizontal" Margin="0,20,0,0" Height="80" Width="400">
+                <Button Click="Answer1_Click" Background="Cyan" Width="180" Height="70" x:Name="Answer1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15"/>
+                <Button Click="Answer2_Click" Background="Cyan" Width="180" Height="70" x:Name="Answer2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="15"/>
+            </StackPanel>
+            <StackPanel x:Name="AnswersBottom" Orientation="Horizontal" Margin="0,20,0,0" Height="80" Width="400">
+                <Button Click="Answer3_Click" Background="Cyan" Width="180" Height="70" x:Name="Answer3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" FontSize="15"/>
+                <Button Click="Answer4_Click" Background="Cyan" Width="180" Height="70" x:Name="Answer4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="15"/>
+            </StackPanel>
+        </StackPanel>
+
+
+        <Button Background="LightBlue" Click="BackClick" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top" Width="42" Height="42" BorderThickness="0">
+            <Image Source="../Images/return.png" Height="40" Width="40"/>
+        </Button>
+        <TextBlock x:Name="QuestionCounter" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,300">Question 1/10</TextBlock>
+
+    </Grid>
+</Window>
